@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>From 2D to 3D</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+	<py-script src="C:\Users\harik\OneDrive\Desktop\pyexpo done by student\code check 1.py"></py-script>
+
+
+	<div class="upload" id="upload">
+		<h2 id="convert">Convert your 2D to a 3D model</h2>
+		<input class="file-upload" type="file" onchange="readURL(this)" accept="Image/*" id="file">
+		<label for="file">Upload file</label>
+		<div class="upload-area">
+			<img src="white.jpg" class="hello" >
+		</div>
+	</div>
+
+	<center><img src="brush2.png"></center>
+
+	<div class="title">
+		<h5>Empowering</h5>
+		<h1>3D Designs</h1><br>
+		<p>Instantly converting 2D image to 3d Models</p>
+	</div>
+
+	<div class="navbar">
+		<ul id="menuList">
+			<li><a href="#">Home</a></li>
+			<li><a href="#convert">Start Now!</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<img src="menu.png" class="menu-icon" onclick="togglemenu()">
+	</div>
+
+
+	<div class="start">
+		<h2><a href="#convert">Start now!</a></h2>
+	</div>
+
+	<div class="convert">
+		<h2>Convert</h2>
+	</div>
+
+	<div class="footer">
+		<h5>Designed by the team</h5>
+	</div>
+
+
+
+
+
+	<script>
+		var menulist=document.getElementbyId("menuList");
+
+		menuList.style.maxHeight="0px";
+
+		function togglemenu()
+		{
+			if(menuList.style.maxHeight=="0px")
+			{
+				menuList.style.maxHeight="180px";
+				menuList.style.opacity="100%;";
+			}
+			else
+			{
+				menuList.style.maxHeight="0px";
+				menuList.style.opacity="0%;"
+			}
+		}
+	</script>
+
+	<script>
+		const image = document.querySelector("img"),
+		input=document.querySelector("input");
+
+		input.addEventListener("change", ()=>{
+			image.src=URL.createObjectURL(input.files[0]);
+		})
+	</script>
+
+</body>
+</html>

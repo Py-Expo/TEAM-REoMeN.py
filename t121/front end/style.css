@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ojuju:wght@200..800&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #fff;
+	cursor: crosshair;
+}
+html 
+{
+	scroll-behavior: smooth ;
+}
+
+.title
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1
+{
+	font-size: 6.8em;
+	font-family: "Montserrat", sans-serif;
+ 	font-weight: 800;
+  	font-style: normal;
+}
+.title h5
+{
+	font-size: 1em;
+	font-family: "Montserrat", sans-serif;
+ 	font-weight: 800;
+  	font-style: normal;
+  	text-align: center;
+  	transform: scaleY(1.6);
+  	text-transform: uppercase;
+  	letter-spacing: 0.1em;
+}
+.title p 
+{
+	font-size: 0.7em;
+	font-family: "Montserrat", sans-serif;
+ 	font-weight: 800;
+  	font-style: normal;
+  	text-align: right;
+  	transform: scaleY(1.4);
+  	text-transform: uppercase;
+  	letter-spacing: 0.1em;
+  	transform: skewX(-5deg);
+}
+img 
+{
+	width: 25%;
+	opacity: 80%;
+	position: absolute;
+	top: 30%;
+	transform: translate(-50%,-50%);
+	right: 50%;
+	transform: scaleY(3)scaleX(-2) skewX(-45deg) rotate(17deg);
+	animation: img infinite 5s ease-in-out;
+}
+@keyframes img
+{
+	0% {
+		transform: scaleY(3)scaleX(-2) skewX(-45deg) rotate(17deg)translate(10px);
+	}
+	50% 
+	{
+		transform: scaleY(3)scaleX(-2) skewX(-45deg) rotate(17deg)translate(15px);
+	}
+	100%
+	{
+		transform: scaleY(3)scaleX(-2) skewX(-45deg) rotate(17deg)translate(10px);
+	}
+}
+.navbar {
+	display: flex;
+	font-size: 1em;
+	font-family: "Montserrat", sans-serif;
+ 	font-weight: 600;
+  	font-style: normal;
+  	text-align: center;
+  	padding-top: 30px;
+}
+.navbar ul
+{
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	cursor: pointer;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.navbar li:hover
+{
+	transform: scaleY(1.2) scaleX(1.1);
+}
+.navbar li 
+{
+	list-style: none;
+	transition: 0.4s;
+}
+.navbar ul a 
+{
+	text-decoration: none;
+	color: #000;
+}
+.start 
+{
+	position: absolute;
+	height: 50px;
+	width: 10%;
+	background: #FF6200;
+	border-radius: 20px;
+	box-shadow: 10px 10px 50px #FF6200,10px 10px 50px #FF6200;
+	top: 75%;
+	left: 50%;
+	transform: translate(-10%,-10%);
+	text-align: center;
+	transition: 0.3s;
+}
+.start h2
+{
+	font-size: 1.3em;
+	font-family: "Montserrat", sans-serif;
+ 	font-weight: 400;
+ 	padding: 10px;
+ 	cursor: pointer;
+}
+.start h2 a 
+{
+	text-decoration: none;
+	color: #fff;
+}
+.start:hover 
+{
+	transform: translate(-10%,-10%)scale(1.1) rotate(-5deg);
+}
+.upload label
+{
+	position: absolute;
+	font-size: 2em;
+	text-align: center;
+	line-height: 20pc;
+	font-family: 'Poppins',sans-serif;
+	height: 300px;
+	width: 30%;
+	border: 2.5px dashed #999;
+	border-radius: 20px;
+	box-shadow: 10px 10px 50px grey,10px 10px 50px grey;
+	top: 140%;
+	left: 40%;
+	transform: translate(-10%,-10%);
+	cursor: pointer;
+	transition: 0.2s;
+}
+.upload input
+{
+	display: none;
+}
+.upload h2 
+{
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	font-size: 1.3em;
+	font-family: "Montserrat", sans-serif;
+ 	font-weight: 600;
+ 	color: orangered;
+}
+.upload label:hover 
+{
+	border-color: orangered;
+	color: orangered;
+}
+.upload h2 
+{
+position: absolute;
+font-size: 2em;
+top: 120%;
+left: 35%;
+ransform: translate(-10%,-10%);
+color: #000;
+
+}
+.menu-icon  
+{
+	width: 15px;
+	height: 10px;
+	animation: none;
+	display: flex;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 25%;
+	padding: 25px;
+	display: none;
+}
+.upload .upload-area
+{
+		position: absolute;
+	font-size: 2em;
+	text-align: center;
+	line-height: 20pc;
+	font-family: 'Poppins',sans-serif;
+	height: 300px;
+	width: 30%;
+	border: 2.5px dashed #999;
+	border-radius: 20px;
+	box-shadow: 10px 10px 50px grey,10px 10px 50px grey;
+	top: 190%;
+	left: 40%;
+	transform: translate(-10%,-10%);
+	cursor: pointer;
+	transition: 0.2s;
+	overflow: hidden;
+}
+.upload .upload-area .hello {
+	animation: none;
+	position: absolute;
+	transform: scale(5);
+}
+.convert 
+{
+	position: absolute;
+	height: 50px;
+	width: 10%;
+	background: #FF6200;
+	border-radius: 20px;
+	box-shadow: 10px 10px 50px #FF6200,10px 10px 50px #FF6200;
+	top: 240%;
+	left: 40%;
+	transform: translate(-10%,-10%);
+	text-align: center;
+	transition: 0.3s;
+}
+.convert h2
+{
+	font-size: 1.3em;
+	font-family: "Montserrat", sans-serif;
+ 	font-weight: 400;
+ 	padding: 10px;
+ 	cursor: pointer;
+ 	color: #fff;
+}
+.convert:hover
+{
+	box-shadow: 10px 10px 50px rebeccapurple,10px 10px 50px rebeccapurple;
+}
+.footer 
+{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	box-shadow: 10px 10px 30px grey;
+	top: 300%;
+}
+.footer h5 
+{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: "Montserrat", sans-serif;
+	padding: 10px;
+}
+
+
+
+/*mobile:  */
+@media(max-width: 480px)
+{
+	img
+	{
+		width: 50%;
+	}
+	.menu-icon {
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 80%;
+    width: 25px;
+    height: 25px;
+    transform: rotate(40deg);
+	}
+	.navbar ul
+	{
+		display: block;
+		margin-top: 80px;
+		overflow: hidden;
+		transition: 0.4s ease-in-out;
+		background: #add8e6;
+		padding-right: 20px;
+		padding-left: 20px;
+		border-radius: 20px;
+		position: absolute;
+		left: 50%;
+	}
+	.navbar li 
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.title h5
+	{
+		font-size: 0.7em;
+	}
+	.title h1 
+	{
+		font-size: 4.5em;
+	}
+	.title p 
+	{
+		font-size: 0.7em;
+	}
+	img
+	{
+		animation: none;
+	}
+	.start  
+	{
+		width: 60%;
+		position: absolute;
+		left: 10%;
+		margin-top: 50px;
+	}
+	.upload h2 
+	{
+		font-size: 1.3em;
+		position: absolute;
+		left: 5%;
+	}
+	.upload label 
+	{
+		width: 60%;
+		height: 180px;
+		position: absolute;
+		left: 25%;
+		text-align: center;
+		font-size: 1.5em;
+	}
+	.convert
+	{
+		width: 60%;
+		position: absolute;
+		left: 10%;
+		margin-top: 50px;
+	}
+	.upload .upload-area 
+	{
+		width: 60%;
+		height: 180px;
+		position: absolute;
+		left: 25%;
+		text-align: center;
+		font-size: 1.5em;
+	}
+	.upload .upload-area img 
+	{
+		transform: scale(2);
+	}
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	.start
+	{
+		width: 30%;
+		position: absolute;
+		left: 30%;
+		top: 80%;
+		margin-top: 50px;
+	}
+	.upload h2 
+	{
+		position: absolute;
+		left: 30%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+		.start
+	{
+		width: 30%;
+		position: absolute;
+		left: 30%;
+		top: 80%;
+		margin-top: 50px;
+	}
+	.upload h2 
+	{
+		position: absolute;
+		left: 20%;
+	}
+}
