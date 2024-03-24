@@ -1,0 +1,7 @@
+This is a Readme file:
+
+
+The project is mainly aimed to convert 2D images to 3D models. Python is used as back-end whereas HTML, CSS are used for frontend framework. 
+
+The library file used in Python is Pillow (mentioned as PIL in the program) for accepting the 2d image from the user. The conversion takes place in the program and the converted 3d model is exported as .obj(object file) and can be viewed in 3d rendering apps like Blender, Cinema 4d etc. Scale down the 3d model for proper view.
+Thanks
